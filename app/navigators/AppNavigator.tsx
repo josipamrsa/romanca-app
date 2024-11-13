@@ -32,10 +32,7 @@ import { ComponentProps } from "react"
  */
 export type AppStackParamList = {
   Welcome: undefined
-  Login: undefined // @demo remove-current-line
-  Demo: NavigatorScreenParams<DemoTabParamList> // @demo remove-current-line
-  // 🔥 Your screens go here
-  // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
+  Intro: undefined
 }
 
 /**
@@ -70,7 +67,8 @@ const AppStack = () => {
         },
       }}>
 
-      <Stack.Screen name="Welcome" component={Screens.WelcomeScreen} />
+      {/* <Stack.Screen name="Welcome" component={Screens.WelcomeScreen} /> */}
+      <Stack.Screen name="Intro" component={Screens.IntroScreen} />
 
     </Stack.Navigator>
   )
